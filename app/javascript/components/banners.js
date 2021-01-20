@@ -28,6 +28,7 @@ const initBannerSlide = () => {
       const slideOneMoment =
         scroll /
         (bannerOne.getBoundingClientRect().top + bannerOne.offsetHeight);
+      console.log(slideOneMoment);
       const slideTwoMoment =
         scroll /
         (bannerTwo.getBoundingClientRect().top + bannerTwo.offsetHeight);
@@ -50,16 +51,20 @@ const initBannerSlide = () => {
 
       if (slideOneFunction < 0 && slideOneFunction > -bannerOneOffset) {
         bannerOne.style.transform = `translateX(${slideOneFunction}px)`;
+        bannerOne.style.opacity = slideOneMoment;
       }
 
       if (slideTwoFunction < 0 && slideTwoFunction > -bannerTwoOffset) {
         bannerTwo.style.transform = `translateX(${-slideTwoFunction}px)`;
+        bannerTwo.style.opacity = slideTwoMoment;
       }
       if (slideThreeFunction <= 0 && slideThreeFunction > -bannerThreeOffset) {
         bannerThree.style.transform = `translateX(${slideThreeFunction}px)`;
+        bannerThree.style.opacity = slideThreeMoment;
       }
       if (slideFourFunction <= 0 && slideFourFunction > -bannerFourOffset) {
         bannerFour.style.transform = `translateX(${-slideFourFunction}px)`;
+        bannerFour.style.opacity = slideFourMoment;
       }
     });
   };
