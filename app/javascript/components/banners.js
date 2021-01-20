@@ -14,12 +14,19 @@ const initBannerSlide = () => {
     bannerFour.getBoundingClientRect().left + bannerFour.offsetWidth;
 
   window.addEventListener("scroll", () => {
-    let scroll = window.pageYOffset;
+    let scroll = 0;
+    if (bannerOne.getBoundingClientRect().bottom > 0) {
+      scroll = window.pageYOffset;
+    }
+    console.log(scroll);
+
+    // console.log(scroll, bannerOne.getBoundingClientRect().top);
 
     const slideOneMoment =
       scroll / (bannerOne.getBoundingClientRect().top + bannerOne.offsetHeight);
     const slideTwoMoment =
       scroll / (bannerTwo.getBoundingClientRect().top + bannerTwo.offsetHeight);
+
     const slideThreeMoment =
       scroll /
       (bannerThree.getBoundingClientRect().top + bannerThree.offsetHeight);
@@ -36,16 +43,17 @@ const initBannerSlide = () => {
     const slideFourFunction =
       -bannerFourOffset + slideFourMoment * bannerFourOffset;
 
-    if (slideOneFunction <= 0) {
+    if (slideOneFunction < 0 && slideOneFunction > -bannerOneOffset) {
       bannerOne.style.transform = `translateX(${slideOneFunction}px)`;
     }
-    if (slideTwoFunction <= 0) {
+
+    if (slideTwoFunction < 0 && slideTwoFunction > -bannerTwoOffset) {
       bannerTwo.style.transform = `translateX(${-slideTwoFunction}px)`;
     }
-    if (slideThreeFunction <= 0) {
+    if (slideThreeFunction <= 0 && slideThreeFunction > -bannerThreeOffset) {
       bannerThree.style.transform = `translateX(${slideThreeFunction}px)`;
     }
-    if (slideFourFunction <= 0) {
+    if (slideFourFunction <= 0 && slideFourFunction > -bannerFourOffset) {
       bannerFour.style.transform = `translateX(${-slideFourFunction}px)`;
     }
   });
