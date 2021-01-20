@@ -11,7 +11,7 @@
 
 .second-stack {
   position: absolute;
-  left: 460.56px;
+  right: 82px;
   top: 371.57px;
   overflow: hidden;
 }
@@ -24,6 +24,76 @@
 
 .fourth-stack {
   position: absolute;
-  left: 400.11px;
+  // left: 400.11px;
+  right: 150px;
   top: 635.45px;
+}
+
+@media (max-width: 905px) {
+  .top-stack {
+    width: 541px;
+  }
+  .second-stack {
+    width: 548px;
+    top: 335.57px;
+  }
+
+  .third-stack {
+    width: 545px;
+    left: 95.89px;
+    top: 452.31px;
+  }
+
+  .fourth-stack {
+    width: 541px;
+    right: 107px;
+    top: 541.45px;
+  }
+}
+
+@media (max-width: 682px) {
+  .top-stack {
+    width: 340px;
+  }
+  .second-stack {
+    width: 348px;
+    top: 307.57px;
+  }
+
+  .third-stack {
+    width: 345px;
+    left: 95.89px;
+    top: 382.31px;
+  }
+
+  .fourth-stack {
+    width: 341px;
+    right: 107px;
+    top: 440.45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .top-stack {
+    width: 275px;
+    left: 34px;
+    top: 256.63px;
+  }
+  .second-stack {
+    width: 283px;
+    top: 303.57px;
+    right: 32px;
+  }
+
+  .third-stack {
+    width: 280px;
+    left: 34.89px;
+    top: 373.31px;
+  }
+
+  .fourth-stack {
+    width: 276px;
+    right: 35px;
+    top: 436.45px;
+  }
 }
