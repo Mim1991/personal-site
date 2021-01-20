@@ -1,1 +1,111 @@
 // Specific CSS for your home-page
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* perspective: 1000px; */
+}
+
+.big-title {
+  position: absolute;
+  top: calc(50% - 2rem);
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 30;
+  line-height: 4rem;
+  color: bisque;
+}
+
+.section {
+  width: 100%;
+  background-color: #1b1b1b;
+  position: relative;
+}
+
+.section .container {
+  // padding: 3rem;
+  min-height: 200vh;
+}
+
+.section .content > * {
+  margin: 2rem;
+}
+
+/* section content */
+
+.content {
+  color: #fff;
+  transform: translateY(-50px);
+}
+
+.imgContainer {
+  transform: translateY(50px);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.border {
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0%;
+  left: 0;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 100%;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  z-index: 20;
+  background: linear-gradient(to top, #1b1b1b, transparent);
+}
+
+.opacity {
+  opacity: 0;
+}
+
+/* media queries */
+@media (max-width: 850px) {
+}
+
+@media (max-width: 600px) {
+  .big-title {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .content-two {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    font-size: 1.2rem;
+    width: 40%;
+  }
+}
