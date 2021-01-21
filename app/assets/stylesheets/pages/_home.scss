@@ -13,6 +13,10 @@ a:hover {
   text-decoration: none;
 }
 
+.wrapper-position {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   /* perspective: 1000px; */
@@ -20,7 +24,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background-color: #1b1b1b;
 }
 

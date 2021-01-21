@@ -39,9 +39,14 @@ p {
   // color: #f5fff4;
 }
 
+.project svg {
+  margin-bottom: 2.5rem;
+}
+
 .project-arrow {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project-info h2 {
@@ -69,5 +74,72 @@ p {
   h2,
   h3 {
     color: #ffeefd;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio-header svg {
+    width: 740px;
+  }
+
+  .section-three {
+    h2 {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .portfolio-header svg {
+    width: 500px;
+  }
+
+  .section-three {
+    h3 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+  .project-arrow svg {
+    width: 76px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section .container {
+    min-height: 100vh;
+  }
+  .portfolio-header svg {
+    width: 370px;
+  }
+  .section-three {
+    min-height: 100vh;
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  }
+
+  .portfolio-header {
+    margin-bottom: 24px;
+  }
+
+  .border-header {
+    margin-top: -16px;
+    margin-bottom: 16px;
+  }
+  .border-project {
+    margin-bottom: 24px;
+  }
+  .project-arrow svg {
+    width: 46px;
+    margin-bottom: 0;
   }
 }
