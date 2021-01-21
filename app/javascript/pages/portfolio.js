@@ -37,7 +37,7 @@ const initPortfolio = () => {
       bordersOne.style.width = `${distanceBordOne * 100}%`;
       projectOne.style.opacity = distanceBordOne;
       projectOne.style.transform = `translateY(${
-        (1 - distanceBordOne) * 200
+        (1 - distanceBordOne) * 150
       }px)`;
     }
 
@@ -45,15 +45,15 @@ const initPortfolio = () => {
       bordersTwo.style.width = `${distanceBordTwo * 100}%`;
       projectTwo.style.opacity = distanceBordTwo;
       projectTwo.style.transform = `translateY(${
-        (1 - distanceBordTwo) * 200
+        (1 - distanceBordTwo) * 150
       }px)`;
     }
 
-    if (distanceBordThree <= 1) {
+    if (distanceBordThree <= 1 && distanceBordThree >= 0) {
       bordersThree.style.width = `${distanceBordThree * 100}%`;
       projectThree.style.opacity = distanceBordThree;
       projectThree.style.transform = `translateY(${
-        (1 - distanceBordThree) * 200
+        (1 - distanceBordThree) * 150
       }px)`;
     }
     // console.dir(portfolioHeader);
