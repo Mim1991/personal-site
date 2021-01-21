@@ -21,6 +21,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: #1b1b1b;
 }
 
 .big-title {
@@ -43,7 +44,7 @@ body {
 
 .section .container {
   // padding: 3rem;
-  min-height: 300vh;
+  min-height: 200vh;
 }
 
 .section .content > * {
