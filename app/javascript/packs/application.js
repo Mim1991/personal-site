@@ -23,10 +23,12 @@ import "bootstrap";
 // Internal imports, e.g:
 import { initLanding } from "../pages/landing.js";
 import { initBannerSlide } from "../components/banners.js";
+import { initPortfolio } from "../pages/portfolio.js";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
   // initSelect2();
   initLanding();
   initBannerSlide();
+  initPortfolio();
 });

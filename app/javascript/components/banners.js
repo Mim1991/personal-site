@@ -28,7 +28,7 @@ const initBannerSlide = () => {
       const slideOneMoment =
         scroll /
         (bannerOne.getBoundingClientRect().top + bannerOne.offsetHeight);
-      console.log(slideOneMoment);
+
       const slideTwoMoment =
         scroll /
         (bannerTwo.getBoundingClientRect().top + bannerTwo.offsetHeight);
