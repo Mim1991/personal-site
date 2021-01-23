@@ -25,6 +25,14 @@
   width: 30%;
   position: absolute;
   left: 100px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1.5s all ease-in-out;
+}
+
+.app-text-appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .services-header {
