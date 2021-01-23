@@ -30,16 +30,12 @@
   transition: 1.5s all ease-in-out;
 }
 
-.app-text-appear {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .services-header {
   color: white;
   font-size: 47px;
   font-weight: 800;
   font-family: $poppins;
+  letter-spacing: 3px;
 }
 
 #container {
@@ -72,6 +68,9 @@
   margin-right: 0;
   right: 145px;
   top: 300px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1.5s all ease-in-out;
 }
 
 #containertwo {
@@ -82,4 +81,8 @@
 
 .service-design {
   position: relative;
+}
+.app-text-appear {
+  opacity: 1;
+  transform: translateY(0);
 }
