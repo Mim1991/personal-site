@@ -4,7 +4,7 @@
   align-items: center;
   width: 95%;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   margin-bottom: 10vh;
 }
 
@@ -13,15 +13,21 @@
 }
 
 .service-web {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 5%;
+  margin-right: -5%;
+  // margin-bottom: 30vh;
 }
 .web-desc {
-  width: 40%;
+  width: 30%;
+  position: absolute;
+  left: 100px;
 }
 
-.web-desc h2 {
+.services-header {
   color: white;
   font-size: 47px;
   font-weight: 800;
@@ -29,8 +35,9 @@
 }
 
 #container {
-  width: 60%;
-  height: 500px;
+  width: 100vw;
+  height: 100vh;
+  // padding-right: 27%;
 }
 #container:focus {
   outline: none;
@@ -52,12 +59,19 @@
 }
 
 .web-design-content {
-  width: 40%;
-  margin-left: -15%;
-  margin-right: 5%;
+  position: absolute;
+  width: 30%;
+  margin-right: 0;
+  right: 194px;
+  top: 205px;
 }
 
 #containertwo {
-  width: 60%;
-  height: 400px;
+  width: 100vw;
+  height: 100vh;
+  padding-right: 30%;
+}
+
+.service-design {
+  position: relative;
 }
