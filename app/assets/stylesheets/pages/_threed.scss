@@ -36,6 +36,7 @@
   font-weight: 800;
   font-family: $poppins;
   letter-spacing: 3px;
+  transition: 0.5s all linear;
 }
 
 #container {
@@ -66,8 +67,8 @@
   position: absolute;
   width: 30%;
   margin-right: 0;
-  right: 145px;
-  top: 300px;
+  right: 243px;
+  top: 333px;
   opacity: 0;
   transform: translateY(50px);
   transition: 1.5s all ease-in-out;
@@ -86,10 +87,18 @@
   opacity: 1;
   transform: translateY(0);
 }
+.header-invis {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
-@media (max-width: 960px) {
+@media (max-width: 1065px) {
   .section-five svg {
-    width: 636px;
+    width: 736px;
+  }
+
+  .section-five {
+    margin-top: 17vh;
   }
   .services-header {
     font-size: 34px;
@@ -101,7 +110,8 @@
   }
 
   .web-design-content {
-    right: 13px;
+    right: 72px;
+    top: 363px;
     width: 40%;
   }
 
@@ -114,9 +124,10 @@
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 768px) {
   .section-five svg {
-    width: 450px;
+    width: 600px;
+    margin-bottom: 0px;
   }
   .services-header {
     font-size: 29px;
@@ -135,23 +146,71 @@
     width: 42%;
   }
   .web-design-content {
-    right: 0;
-    width: 42%;
+    right: 8px;
+    width: 44%;
+    top: 161px;
   }
 
   .design-desc iframe {
     width: 124%;
   }
+
+  #containertwo {
+    height: 70vh;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 675px) {
+  .section-five {
+    margin-top: 5vh;
+  }
+}
+
+@media (max-width: 565px) {
+  .section-five svg {
+    width: 350px;
+  }
   .web-desc {
     width: 65%;
   }
   .web-design-content {
-    width: 65%;
+    width: 55%;
+    top: 171px;
   }
   .design-desc p {
     font-weight: 600;
+  }
+  #container {
+    height: 90vh;
+  }
+  #containertwo {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-five svg {
+    width: 350px;
+    margin-bottom: 0;
+  }
+  .web-desc {
+    width: 95%;
+    // top: 125px;
+  }
+
+  .web-design-content {
+    width: 95%;
+    top: 50px;
+  }
+
+  .design-desc iframe {
+    width: 177%;
+  }
+}
+
+@media (max-width: 330px) {
+  .section-five svg {
+    width: 265px;
+    margin-bottom: 0;
   }
 }

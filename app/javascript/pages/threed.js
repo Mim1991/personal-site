@@ -4,6 +4,7 @@ const initScroll = () => {
     const appTextPosition = appText.getBoundingClientRect().top;
     const designText = document.querySelector(".web-design-content");
     const designTextPosition = designText.getBoundingClientRect().top;
+
     const screenPosition = window.innerHeight / 1.5;
 
     if (appTextPosition < screenPosition) {
