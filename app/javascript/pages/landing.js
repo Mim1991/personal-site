@@ -2,6 +2,7 @@ const initLanding = () => {
   const translate = document.querySelectorAll(".translate");
   const bigTitle = document.querySelector(".big-title");
   const header = document.querySelector("header");
+
   const shadow = document.querySelector(".shadow");
   const content = document.querySelector(".content");
   const section = document.querySelector(".section");
@@ -22,7 +23,7 @@ const initLanding = () => {
     });
 
     // opacity on scroll
-    bigTitle.style.opacity = -scroll / (headerHeight / 1.5) + 1;
+    bigTitle.style.opacity = -scroll / (window.innerHeight / 1.5) + 1;
     // blur out the section before on scroll. Second value is the rate of blur
     shadow.style.height = `${scroll * 0.7 + 300}px`;
 

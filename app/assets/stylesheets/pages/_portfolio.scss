@@ -29,7 +29,7 @@ p {
 }
 .portfolio-header {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(30px);
   transition: 0.5s all ease-in-out;
 }
 
@@ -57,13 +57,13 @@ p {
 .project-info h2 {
   margin-bottom: 2.5rem;
   font-weight: 800;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #f5fff4;
 }
 
 .project-one {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(30px);
   transition: 0.5s all ease-in-out;
   h2,
   h3 {
@@ -73,7 +73,7 @@ p {
 
 .project-two {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(30px);
   transition: 0.5s all ease-in-out;
   h2,
   h3 {
@@ -83,7 +83,7 @@ p {
 
 .project-three {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(30px);
   transition: 0.5s all ease-in-out;
   h2,
   h3 {
@@ -98,7 +98,7 @@ p {
 }
 .border-full {
   width: 97%;
-  transition: 1.1s all linear;
+  transition: 0.4s all linear;
 }
 @media (max-width: 850px) {
   .portfolio-header svg {
@@ -135,7 +135,7 @@ p {
     // min-height: 80vh;
   }
   .portfolio-header svg {
-    width: 370px;
+    width: 350px;
   }
   .section-three {
     h3 {
