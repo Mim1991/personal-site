@@ -65,10 +65,10 @@
 
 .web-design-content {
   position: absolute;
-  width: 30%;
+  width: 36%;
   margin-right: 0;
-  right: 243px;
-  top: 333px;
+  right: 19px;
+  top: 288px;
   opacity: 0;
   transform: translateY(50px);
   transition: 1.5s all ease-in-out;
@@ -110,9 +110,9 @@
   }
 
   .web-design-content {
-    right: 72px;
-    top: 363px;
-    width: 40%;
+    right: 16px;
+    top: 283px;
+    width: 33%;
   }
 
   .web-desc p {
@@ -146,17 +146,17 @@
     width: 42%;
   }
   .web-design-content {
-    right: 8px;
-    width: 44%;
-    top: 161px;
+    left: 16px;
+    width: 50%;
+    top: 214px;
   }
 
   .design-desc iframe {
-    width: 124%;
+    width: 100%;
   }
 
   #containertwo {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
@@ -174,8 +174,9 @@
     width: 65%;
   }
   .web-design-content {
-    width: 55%;
-    top: 171px;
+    width: 65%;
+    top: 244px;
+    left: 19px;
   }
   .design-desc p {
     font-weight: 600;
@@ -200,11 +201,12 @@
 
   .web-design-content {
     width: 95%;
-    top: 50px;
+    top: 136px;
+    left: 19px;
   }
 
   .design-desc iframe {
-    width: 177%;
+    width: 100%;
   }
 }
 
