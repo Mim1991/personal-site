@@ -27,7 +27,7 @@
   left: 100px;
   opacity: 0;
   transform: translateY(50px);
-  transition: 1.5s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 .services-header {
@@ -71,7 +71,7 @@
   top: 288px;
   opacity: 0;
   transform: translateY(50px);
-  transition: 1.5s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 #containertwo {
@@ -147,7 +147,7 @@
   }
   .web-design-content {
     left: 16px;
-    width: 50%;
+    width: 42%;
     top: 214px;
   }
 
@@ -182,7 +182,7 @@
     font-weight: 600;
   }
   #container {
-    height: 90vh;
+    height: 96vh;
   }
   #containertwo {
     height: 90vh;
@@ -214,5 +214,31 @@
   .section-five svg {
     width: 265px;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 400px) and (min-height: 800px) {
+  .web-design-content {
+    top: 201px;
+  }
+}
+@media (max-width: 1030px) and (min-height: 1000px) {
+  .web-design-content {
+    left: 16px;
+    width: 39%;
+    top: 359px;
+  }
+}
+
+@media (max-width: 1030px) and (min-height: 1200px) {
+  .web-design-content {
+    width: 34%;
+    top: 246px;
+    left: 645px;
+  }
+  #container {
+    height: 50vh;
+  }
+  #containertwo {
+    height: 46vh;
   }
 }
