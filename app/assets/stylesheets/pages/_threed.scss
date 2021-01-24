@@ -218,7 +218,10 @@
 }
 @media (max-width: 400px) and (min-height: 800px) {
   .web-design-content {
-    top: 201px;
+    top: 305px;
+  }
+  #container {
+    height: 95vh;
   }
 }
 @media (max-width: 1030px) and (min-height: 1000px) {
