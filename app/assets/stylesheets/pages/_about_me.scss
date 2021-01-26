@@ -6,6 +6,12 @@
   margin-bottom: 20vh;
 }
 
+.about-header {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.7s all ease-in-out;
+}
+
 .about-content {
   display: flex;
   align-items: center;
@@ -22,10 +28,16 @@
   justify-content: space-between;
   height: 60vh;
   padding: 5vh 0;
+  opacity: 0;
+  transform: translateY(-70px);
+  transition: 1s all ease-in;
 }
 
 .profile-photo {
   height: 60vh;
+  opacity: 0;
+  transform: translateY(70px);
+  transition: 1s all ease-in;
 }
 
 .button-cv {
@@ -45,6 +57,12 @@
     transition: 0.4s all ease-out;
     color: rgb(0, 158, 124);
     transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 1050px) {
+  .profile-photo {
+    width: 68vh;
   }
 }
 
