@@ -1,0 +1,26 @@
+.section-six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 20vh;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+  width: 83%;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.profile-photo {
+  height: 60vh;
+}
