@@ -4,6 +4,8 @@ const initScroll = () => {
     const appTextPosition = appText.getBoundingClientRect().top;
     const designText = document.querySelector(".web-design-content");
     const designTextPosition = designText.getBoundingClientRect().top;
+    const learnText = document.querySelector(".learn-select");
+    const learnTextPosition = learnText.getBoundingClientRect().top;
 
     const screenPosition = window.innerHeight / 1.5;
 
@@ -12,6 +14,9 @@ const initScroll = () => {
     }
     if (designTextPosition < screenPosition) {
       designText.classList.add("app-text-appear");
+    }
+    if (learnTextPosition < screenPosition) {
+      learnText.classList.add("app-text-appear");
     }
   }
 

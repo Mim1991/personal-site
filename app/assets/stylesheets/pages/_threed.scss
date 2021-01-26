@@ -30,6 +30,28 @@
   transition: 1s all ease-in-out;
 }
 
+.service-learn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.learn-desc {
+  width: 30%;
+  position: absolute;
+  left: 100px;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: 1s all ease-in-out;
+}
+
+#containerthree {
+  width: 100vw;
+  height: 100vh;
+}
+
 .services-header {
   color: white;
   font-size: 47px;
