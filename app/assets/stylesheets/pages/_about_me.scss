@@ -47,3 +47,77 @@
     transform: translateY(-5px);
   }
 }
+
+@media (max-width: 958px) {
+  .biography p {
+    font-size: 14px;
+  }
+  .about-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 864px) {
+  .about-desc {
+    width: 55%;
+  }
+}
+
+@media (max-width: 750px) {
+  .section-six svg {
+    width: 600px;
+  }
+  .about-content {
+    width: 95%;
+  }
+  .about-desc {
+    width: 56%;
+  }
+  .profile-photo {
+    height: 50vh;
+    margin-top: -36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .button-cv a {
+    font-size: 1rem;
+  }
+  .biography p {
+    font-size: 13px;
+  }
+  .profile-photo {
+    height: 50vh;
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: 630px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-desc {
+    width: 95%;
+    justify-content: flex-start;
+  }
+  .button-cv {
+    margin-top: 30px;
+  }
+  .button-cv a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 570px) {
+  .section-six svg {
+    width: 350px;
+  }
+}
+
+@media (max-width: 570px) {
+  .profile-photo {
+    height: 43vh;
+  }
+  .about-content {
+    margin-top: 3vh;
+  }
+}
