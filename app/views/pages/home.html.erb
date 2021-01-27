@@ -202,7 +202,10 @@
 
         <div class="about-content">
           <div class="about-img">
-            <%= cl_image_tag("personal-profile/aboutmeimg.png", class:"profile-photo") %>
+            <div class="image-wrapper">
+              <%= cl_image_tag("personal-profile/aboutmeimg.png", class:"profile-photo") %>
+              <%= cl_image_tag("personal-profile/aboutmewink.png", class:"profile-photo hidden") %>
+            </div>
           </div>
           <div class="about-desc">
             <div class="biography">
@@ -210,7 +213,7 @@
 
             </div>
             <div class="button-cv">
-              <%= link_to "DOWNLOAD CV", "MeehirPatelResume.pdf", download: ""  %>
+              <%= link_to "DOWNLOAD CV", "MeehirPatelResume.pdf", download: "", class:"download"  %>
             </div>
           </div>
         </div>

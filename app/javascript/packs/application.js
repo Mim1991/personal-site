@@ -26,6 +26,7 @@ import { initBannerSlide } from "../components/banners.js";
 import { initPortfolio } from "../pages/portfolio.js";
 import { initScroll } from "../pages/threed.js";
 import { initSkills } from "../pages/skills.js";
+import { initAbout } from "../pages/about_me.js";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
@@ -35,4 +36,5 @@ document.addEventListener("turbolinks:load", () => {
   initPortfolio();
   initScroll();
   initSkills();
+  initAbout();
 });

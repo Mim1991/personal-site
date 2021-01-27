@@ -27,9 +27,9 @@ const initScroll = () => {
     if (aboutTextPosition < screenPosition) {
       aboutText.classList.add("app-text-appear");
     }
-    if (profilePhotoPosition < screenPosition) {
-      profilePhoto.classList.add("app-text-appear");
-    }
+    // if (profilePhotoPosition < screenPosition) {
+    //   profilePhoto.classList.add("app-text-appear");
+    // }
     if (aboutDescPosition < screenPosition) {
       aboutDesc.classList.add("app-text-appear");
     }
