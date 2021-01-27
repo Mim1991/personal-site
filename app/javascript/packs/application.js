@@ -27,6 +27,7 @@ import { initPortfolio } from "../pages/portfolio.js";
 import { initScroll } from "../pages/threed.js";
 import { initSkills } from "../pages/skills.js";
 import { initAbout } from "../pages/about_me.js";
+import { initPreloader } from "../pages/preloader.js";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
@@ -37,4 +38,5 @@ document.addEventListener("turbolinks:load", () => {
   initScroll();
   initSkills();
   initAbout();
+  initPreloader();
 });
