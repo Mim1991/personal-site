@@ -97,6 +97,30 @@ body {
   opacity: 0;
 }
 
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  a,
+  h3 {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+}
+
+#hire-button {
+  background-color: #f9f7ff;
+  // color: #1b1b1b;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 7px 21px;
+  color: #1b1b1b !important;
+}
+
 /* media queries */
 @media (max-width: 905px) {
   .intro-banners {
