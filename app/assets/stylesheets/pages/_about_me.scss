@@ -62,7 +62,7 @@
 
 @media (max-width: 1050px) {
   .profile-photo {
-    width: 68vh;
+    width: 89%;
   }
 }
 
@@ -118,6 +118,15 @@
     width: 95%;
     justify-content: flex-start;
   }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-photo {
+    width: 80%;
+  }
   .button-cv {
     margin-top: 30px;
   }
@@ -132,10 +141,23 @@
 }
 
 @media (max-width: 570px) {
-  .profile-photo {
-    height: 43vh;
-  }
+  // .profile-photo {
+  //   height: 43vh;
+  // }
   .about-content {
     margin-top: 3vh;
+  }
+}
+
+@media (max-width: 440px) and (min-height: 650px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile-photo {
+    width: 70%;
+    height: unset;
   }
 }
