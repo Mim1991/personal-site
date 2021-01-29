@@ -9,7 +9,7 @@
         <div class="b b5"></div>
         <div class="b b6"></div>
         <h1>LOADING. . .</h1>
-        <%# <h1>SORRY THIS IS TAKING LONGER THAN USUAL. IT WILL BE WORTH THE WAIT!</h1> %>
+        <h1 class="invis">IT'LL BE WORTH THE WAIT!</h1>
       </div>
     </div>
 
@@ -22,10 +22,10 @@
         <div class="section-nav">
           
           <h3 >MEEHIR <span>PATEL</span></h3>
-          <%= link_to "PORTFOLIO", root_path(anchor:'portfolio') %>
-          <%= link_to "SKILLS", root_path(anchor:'skills') %>
-          <%= link_to "SERVICES", root_path(anchor:'services') %>
-          <%= link_to "ABOUT ME", root_path(anchor:'aboutme') %>
+          <%= link_to "PORTFOLIO", root_path(anchor:'portfolio'), data: { turbolinks: false } %>
+          <%= link_to "SKILLS", root_path(anchor:'skills'), data: { turbolinks: false } %>
+          <%= link_to "SERVICES", root_path(anchor:'services'), data: { turbolinks: false } %>
+          <%= link_to "ABOUT ME", root_path(anchor:'aboutme'), data: { turbolinks: false } %>
           <h3 id="hire-button">HIRE ME</h3>
         </div>
       </div>
