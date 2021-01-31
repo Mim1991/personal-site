@@ -7,6 +7,9 @@ nav {
   z-index: 30;
   // background: linear-gradient(to bottom, rgba(0, 0, 0, 0, 0.05), transparent);
 }
+nav {
+  position: fixed;
+}
 
 nav .container {
   display: flex;
