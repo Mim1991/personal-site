@@ -1,12 +1,68 @@
 #revealed-section {
   height: 100vh;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background: #ffe5e4;
-  z-index: -10;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #revealed-section-placeholder {
   height: 100vh;
   z-index: -10;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+}
+
+.contact-form {
+  width: 35%;
+}
+
+#new_contact {
+  padding-top: 25%;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  background-color: #ffe5e400;
+}
+
+.heading-form {
+  display: flex;
+}
+
+.detail-form {
+  display: flex;
+}
+
+.last_name,
+.phone-form {
+  margin-left: 5px;
+}
+
+.first_name,
+.email-form {
+  margin-right: 5px;
+}
+
+#header-footer {
+  font-size: 3rem;
+}
+
+#subhead-footer {
+  font-size: 3.3rem;
+  font-weight: 900;
 }

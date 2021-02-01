@@ -258,7 +258,15 @@
 </div>
 <div class="footer-holder"id="revealed-section-placeholder"></div>
 <div class="footer" id="revealed-section">
-   <%= render "shared/contact_form", message: @message %>
-     
-     
+  <div class="footer-contact">
+    <div class="start-project">
+      <h2 id="header-footer">Ready to get going?</h2>
+      <h2 id="subhead-footer">Start a project</h2>
+    </div>
+    <div class="contact-form">
+      <%= render "shared/contact_form", message: @message %>
+    </div>
+  </div>
+  <div class="social-icons"></div>
+  <div class="quick-contact"></div>
 </div>

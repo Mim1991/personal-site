@@ -1,8 +1,12 @@
 <%= simple_form_for message do |f| %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :email %>
-    <%= f.input :phone %>
+  <div class="heading-form">
+    <%= f.input :first_name, required: true, class:"first_name" %>
+    <%= f.input :last_name, required: true, class:"last_name"%>
+  </div>
+  <div class="detail-form">
+    <%= f.input :email, required: true ,class:"email_form" %>
+    <%= f.input :phone, class:"phone_form" %>
+  </div>
     <%= f.input :message %>
     <%= f.submit %>
 <% end %>
