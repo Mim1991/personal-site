@@ -16,9 +16,10 @@
 
 .footer-contact {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   width: 95%;
+  padding-top: 18%;
 }
 
 .contact-form {
@@ -26,11 +27,14 @@
 }
 
 #new_contact {
-  padding-top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 label {
   margin-bottom: 0;
+  color: #e6a8a3b5;
 }
 
 .form-control {
@@ -65,4 +69,60 @@ label {
 #subhead-footer {
   font-size: 3.3rem;
   font-weight: 900;
+}
+
+.btn-form {
+  margin-top: 16px;
+  padding: 10px 50px;
+  border-radius: 50px;
+  border: none;
+  justify-self: center;
+  color: #fff;
+  letter-spacing: 3px;
+  background-color: #1b1b1be0;
+  width: 50%;
+  transition: 0.5s all ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 3px 2px rgba(53, 53, 53, 0.089);
+    transition: 0.5s all ease-in-out;
+  }
+}
+
+.contact_message {
+  width: 100%;
+}
+
+.message-form {
+  width: 421px;
+  padding-left: 19px;
+}
+
+.quick-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  p {
+    color: #1b1b1b;
+  }
+}
+.quick-details {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-weight: 100;
+    font-size: 12px;
+  }
+}
+
+.social-icons {
+  color: black;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
