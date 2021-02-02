@@ -19,7 +19,7 @@
   align-items: flex-start;
   justify-content: space-around;
   width: 95%;
-  padding-top: 18%;
+  padding-top: 15%;
 }
 
 .contact-form {
@@ -125,4 +125,29 @@ label {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.subhead-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.subhead-box:hover {
+  path {
+    fill: black;
+  }
+  svg {
+    transform: translateX(0);
+    transition: 0.5s all ease;
+    fill: black;
+  }
+}
+
+.subhead-box svg {
+  transform: translateX(-25px);
+  transition: 0.5s all ease;
 }
