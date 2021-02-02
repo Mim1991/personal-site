@@ -2,9 +2,9 @@ import gsap from "gsap";
 
 const initCursor = () => {
   const bigBall = document.querySelector(".cursor__ball--big");
-  console.log(bigBall);
+
   const smallBall = document.querySelector(".cursor__ball--small");
-  const links = document.querySelectorAll("a");
+  const links = document.querySelectorAll("a, .hover");
 
   // Listeners
   document.addEventListener("mousemove", onMouseMove);
@@ -15,7 +15,6 @@ const initCursor = () => {
 
   // Move the cursor
   function onMouseMove(e) {
-    console.log(e);
     gsap.to(bigBall, 0.4, {
       x: e.pageX - 15,
       y: e.clientY,

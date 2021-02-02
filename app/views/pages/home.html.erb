@@ -61,7 +61,7 @@
 <%# Section 2 - Intro %>
     <div class="section">
       <div class="shadow"></div>
-      <div class="container intro-banners">
+      <div class="container intro-banners hover">
         <%= cl_image_tag("personal-profile/Stack_1_ualzdm.png", class: "top-stack slide-in")%>
         <%= cl_image_tag("personal-profile/Stack_2_lzb2ng.png", class: "second-stack")%>
         <%= cl_image_tag("personal-profile/Stack_3_af5fd3.png", class: "third-stack")%>
@@ -89,6 +89,7 @@
       <div class="portfolio-overview">
         <%= link_to "https://youtu.be/lmQx0AHFbuA?t=1995", target: :_blank do  %>
           <div class="project project-one">
+            
             <h3>PROJECT #1</h3>
             <div class="project-info">
               <div class="project-arrow">
@@ -190,7 +191,7 @@
           </svg>
         </div>
         <div class="service-web">
-          <div class="web-desc">
+          <div class="web-desc hover">
             <h2 class="services-header">WEB & APP DEVELOPMENT</h2>
             <p>
               Do you have a existing business that you'd like to take online? <br><br>
@@ -213,7 +214,7 @@
               <iframe src='https://my.spline.design/webtest-b7b0ec9045a4159a8a272d5d86269bd5/' frameborder='0' width='100%' height='100%'></iframe>
             </div>
 
-            <div class="web-design-content">
+            <div class="web-design-content hover">
               <h2 class="services-header">WEB DESIGN</h2>
               <p>
                 Does your current website look outdated and is need of a refresh <br><br>
@@ -225,7 +226,7 @@
         </div>
 
          <div class="service-web">
-          <div class="web-desc learn-select">
+          <div class="web-desc learn-select hover">
             <h2 class="services-header">LEARN TO CODE</h2>
             <p>
               "The best time to plant a tree was 10 years ago. The second best time is now." <br><br>
@@ -254,7 +255,7 @@
 
         <div class="about-content">
           <div class="about-img">
-            <div class="image-wrapper">
+            <div class="image-wrapper ">
               <%= cl_image_tag("personal-profile/aboutmeimg.png", class:"profile-photo") %>
               <%= cl_image_tag("personal-profile/aboutmewink.png", class:"profile-photo hidden") %>
             </div>

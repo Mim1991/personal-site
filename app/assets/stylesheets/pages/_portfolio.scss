@@ -40,15 +40,33 @@ p {
 .project h3 {
   font-weight: 800;
   font-size: 2.8rem;
-  margin: 2rem 0;
+  padding-top: 2rem;
   // color: #f5fff4;
 }
 
 .project svg {
   margin-bottom: 2.5rem;
   margin-right: 45px;
+  transform: translateX(-20px);
+  transition: 1s all ease;
 }
 
+.project:hover {
+  svg {
+    transform: translateX(0px);
+    transition: 1s all ease;
+  }
+}
+
+.project-one-hover {
+  background-image: url("https://res.cloudinary.com/dczzzghtt/image/upload/v1612291751/Screenshot_2021-02-02_at_18.48.52_wtdwk6.png");
+  background-size: cover;
+}
+
+.project-two-hover {
+  background-image: url("https://res.cloudinary.com/dczzzghtt/image/upload/v1612291651/Screenshot_2021-02-02_at_18.47.21_zbajzm.png");
+  background-size: cover;
+}
 .project-arrow {
   display: flex;
   justify-content: space-between;

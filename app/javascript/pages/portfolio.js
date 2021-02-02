@@ -53,7 +53,24 @@ const initPortfolio = () => {
   window.addEventListener("scroll", portfolioAnimate);
 };
 
-export { initPortfolio };
+const initProjectHover = () => {
+  const projectOne = document.querySelector(".project-one");
+  const projectTwo = document.querySelector(".project-two");
+  projectOne.addEventListener("mouseenter", () => {
+    projectOne.classList.add("project-one-hover");
+  });
+  projectOne.addEventListener("mouseleave", () => {
+    projectOne.classList.remove("project-one-hover");
+  });
+  projectTwo.addEventListener("mouseenter", () => {
+    projectTwo.classList.add("project-two-hover");
+  });
+  projectTwo.addEventListener("mouseleave", () => {
+    projectTwo.classList.remove("project-two-hover");
+  });
+};
+
+export { initPortfolio, initProjectHover };
 // window.addEventListener("scroll", () => {
 //   let scroll = window.pageYOffset;
 //   let distanceBordHead = 100 / (portfolioHeader.offsetTop - scroll);
