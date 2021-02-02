@@ -111,6 +111,7 @@
     right: calc(var(--space) * 2);
     cursor: pointer;
     z-index: 101;
+    mix-blend-mode: difference;
   }
 
   svg {
@@ -268,6 +269,7 @@
   letter-spacing: 3px;
   font-weight: 300;
   z-index: 50;
+  mix-blend-mode: difference;
   span {
     font-weight: 700;
   }
