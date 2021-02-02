@@ -28,28 +28,33 @@
       </div>
     </div> %>
 
-    <nav>
-      <div class="container">
+    <%# <nav> %>
+      <%# <div class="container"> %>
         
         <%# <div class="hamburger-menu">
           <div class="bar"></div>
         </div> %>
-        <div class="section-nav">
+        <%# <div class="section-nav"> %>
           
-          <h3 >MEEHIR <span>PATEL</span></h3>
-          <%= link_to "PORTFOLIO", root_path(anchor:'portfolio'), data: { turbolinks: false } %>
-          <%= link_to "SKILLS", root_path(anchor:'skills'), data: { turbolinks: false } %>
-          <%= link_to "SERVICES", root_path(anchor:'services'), data: { turbolinks: false } %>
-          <%= link_to "ABOUT ME", root_path(anchor:'aboutme'), data: { turbolinks: false } %>
-          <h3 id="hire-button">HIRE ME</h3>
-        </div>
-      </div>
-    </nav>
-
+          
+          <%# <%= link_to "PORTFOLIO", root_path(anchor:'portfolio'), data: { turbolinks: false } %> 
+          <%# <%= link_to "SKILLS", root_path(anchor:'skills'), data: { turbolinks: false } %> 
+          <%# <%= link_to "SERVICES", root_path(anchor:'services'), data: { turbolinks: false } %> 
+          <%# <%= link_to "ABOUT ME", root_path(anchor:'aboutme'), data: { turbolinks: false } %> 
+          <%# <h3 id="hire-button">HIRE ME</h3> %>
+        <%# </div> %>
+      <%# </div> %>
+    <%# </nav> %>
+    
+    
+<%= render "shared/navbar" %>
     
 
 <%# Section 1 - Banner %>
     <header>
+    <%= link_to root_path do %>
+      <h3 class="name-heading">MEEHIR <span>PATEL</span></h3>
+    <% end %>
     <h1 class="big-title translate" data-speed="0.25 ">WELCOME.</h1>
       <%= cl_image_tag("personal-profile/hill1_min_banner.png", class: "hill1 translate", data: {speed:"0.13"})%>
       <%= cl_image_tag("personal-profile/hill2-min_ynxfxm.png", class: "hill2 translate", data: {speed:"0"})%>
