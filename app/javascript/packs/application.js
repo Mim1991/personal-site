@@ -29,6 +29,7 @@ import { initSkills } from "../pages/skills.js";
 import { initAbout } from "../pages/about_me.js";
 import { initPreloader } from "../pages/preloader.js";
 import { initNavbar } from "../components/navbar.js";
+import { initCursor } from "../components/cursor.js";
 
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
@@ -41,4 +42,5 @@ document.addEventListener("turbolinks:load", () => {
   initAbout();
   // initPreloader();
   initNavbar();
+  initCursor();
 });
