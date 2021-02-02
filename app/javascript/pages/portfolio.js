@@ -56,6 +56,7 @@ const initPortfolio = () => {
 const initProjectHover = () => {
   const projectOne = document.querySelector(".project-one");
   const projectTwo = document.querySelector(".project-two");
+  const projectThree = document.querySelector(".project-three");
   projectOne.addEventListener("mouseenter", () => {
     projectOne.classList.add("project-one-hover");
   });
@@ -67,6 +68,12 @@ const initProjectHover = () => {
   });
   projectTwo.addEventListener("mouseleave", () => {
     projectTwo.classList.remove("project-two-hover");
+  });
+  projectThree.addEventListener("mouseenter", () => {
+    projectThree.classList.add("project-three-hover");
+  });
+  projectThree.addEventListener("mouseleave", () => {
+    projectThree.classList.remove("project-three-hover");
   });
 };
 
