@@ -1,20 +1,32 @@
 .skill-modal {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #191919;
   position: absolute;
-
   top: 0;
   left: 0;
   transform: translateX(-110%);
   transition: 0.5s all ease-in-out;
   display: hidden;
+  p {
+    font-size: 1.7rem;
+    font-family: $body-alt;
+  }
   p,
   .skill-title {
     color: transparent;
   }
   path {
     fill: none;
+  }
+  svg {
+    cursor: pointer;
+    transform: translateX(10px);
+    transition: 0.5s all ease;
+    &:hover {
+      transform: translateX(-20px);
+      transition: 0.5s all ease;
+    }
   }
 }
 
@@ -36,9 +48,18 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: space-around;
+  padding: 50px 100px;
+}
+
+.skill-title {
+  font-size: 7rem;
+  font-family: $poppins;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .modal-header-skill {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
