@@ -12,40 +12,6 @@
     </div>
   </div>
 <div class="wrapper-position">
-  
-
-
-    <%# <div class="preload">
-      <div class="box"> %>
-        <%# <div class="b b1"></div>
-        <div class="b b2"></div> %>
-        <%# <div class="b b3"></div>
-        <div class="b b4"></div>
-        <div class="b b5"></div>
-        <div class="b b6"></div>
-        <h1>LOADING. . .</h1>
-        <h1 class="invis">IT'LL BE WORTH THE WAIT!</h1>
-      </div>
-    </div> %>
-
-    <%# <nav> %>
-      <%# <div class="container"> %>
-        
-        <%# <div class="hamburger-menu">
-          <div class="bar"></div>
-        </div> %>
-        <%# <div class="section-nav"> %>
-          
-          
-          <%# <%= link_to "PORTFOLIO", root_path(anchor:'portfolio'), data: { turbolinks: false } %> 
-          <%# <%= link_to "SKILLS", root_path(anchor:'skills'), data: { turbolinks: false } %> 
-          <%# <%= link_to "SERVICES", root_path(anchor:'services'), data: { turbolinks: false } %> 
-          <%# <%= link_to "ABOUT ME", root_path(anchor:'aboutme'), data: { turbolinks: false } %> 
-          <%# <h3 id="hire-button">HIRE ME</h3> %>
-        <%# </div> %>
-      <%# </div> %>
-    <%# </nav> %>
-    
     
 <%= render "shared/navbar" %>
     
@@ -309,9 +275,15 @@
       <p><span style="font-weight: 700; font-size: 14px">T:</span><span style="color:#ffe5e300; letter-spacing: 2px"">...</span>+44 7450 568232</p>
     </div>
     <div class="social-icons">
-      <p>Instagram</p>
-      <p>Github</p>
-      <p>LinkedIn</p>
+    <%= link_to "https://www.instagram.com/mimstagramme/", target: :_blank do  %>
+      <p><i class="fab fa-instagram"></i></p>
+    <% end %>
+    <%= link_to "https://www.github.com/Mim1991/", target: :_blank do  %>
+      <p><i class="fab fa-github"></i></p>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/in/mims-patel/", target: :_blank do  %>
+      <p><i class="fab fa-linkedin"></i></p>
+    <% end %>
   </div>
   </div>
 </div>
