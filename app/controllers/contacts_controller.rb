@@ -6,9 +6,9 @@ class ContactsController < ApplicationController
   def create
     @message = Contact.new(contact_params)
     if @message.save
-      redirect_to root_path
+      redirect_to root_path(anchor:'quick-contact'), notice: "Thanks for your message! I'll get back to you ASAP."
     else
-      render :new
+      redirect_to root_path(anchor:'quick-contact'), alert: "Sorry your message wasn't sent. Please check the form."
     end
   end
 

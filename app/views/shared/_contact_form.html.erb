@@ -10,6 +10,17 @@
   <div class="message-form">
     <%= f.input :message %>
   </div>
-    <%= f.submit "SEND", class:"btn-form"%>
+    <%= f.submit "SEND", class:"btn-form", remote: true%>
+<% end %>
+<% flash.each do |type, msg| %>
+  <% if type == 'notice' %>
+    <div class="alert alert-success">
+      <%= msg %>
+    </div>
+  <% else %>
+    <div class="alert alert-danger">
+      <%= msg %>
+    </div>
+  <% end %>
 <% end %>
   

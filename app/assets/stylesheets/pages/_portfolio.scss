@@ -47,14 +47,14 @@ p {
 .project svg {
   margin-bottom: 2.5rem;
   margin-right: 45px;
-  transform: translateX(-20px);
-  transition: 1s all ease;
+  transform: translateX(-60px);
+  transition: 0.5s all ease;
 }
 
 .project:hover {
   svg {
     transform: translateX(0px);
-    transition: 1s all ease;
+    transition: 0.5s all ease;
   }
 }
 
