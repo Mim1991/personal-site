@@ -1,23 +1,44 @@
 .skill-modal {
   height: 100%;
-  width: 0%;
-  background-color: white;
+  width: 100%;
+  background-color: black;
   position: absolute;
-  transform-origin: left;
+
   top: 0;
   left: 0;
+  transform: translateX(-110%);
   transition: 0.5s all ease-in-out;
   display: hidden;
-  p {
+  p,
+  .skill-title {
     color: transparent;
+  }
+  path {
+    fill: none;
   }
 }
 
 .skill-modal-show {
   width: 100%;
   transition: 0.5s all ease-in-out;
-  transform-origin: left;
-  p {
-    color: black;
+  transform: translateY(0);
+  p,
+  .skill-title {
+    color: white;
   }
+  path {
+    fill: white;
+  }
+}
+
+.skill-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.modal-header-skill {
+  display: flex;
+  justify-content: space-around;
 }
