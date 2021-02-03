@@ -23,7 +23,7 @@
 }
 
 .contact-form {
-  width: 35%;
+  width: 30%;
 }
 
 #new_contact {
@@ -46,10 +46,14 @@ label {
 
 .heading-form {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .detail-form {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .last_name,
@@ -94,8 +98,7 @@ label {
 }
 
 .message-form {
-  width: 421px;
-  padding-left: 19px;
+  width: 100%;
 }
 
 .quick-contact {
