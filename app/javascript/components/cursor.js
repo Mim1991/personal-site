@@ -4,7 +4,7 @@ const initCursor = () => {
   const bigBall = document.querySelector(".cursor__ball--big");
 
   const smallBall = document.querySelector(".cursor__ball--small");
-  const links = document.querySelectorAll("a, .hover, svg, skill > h3");
+  const links = document.querySelectorAll("a, .hover, svg, .skill h3");
 
   // Listeners
   document.addEventListener("mousemove", onMouseMove);
