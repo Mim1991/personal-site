@@ -1,0 +1,23 @@
+.skill-modal {
+  height: 100%;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  transform-origin: left;
+  top: 0;
+  left: 0;
+  transition: 0.5s all ease-in-out;
+  display: hidden;
+  p {
+    color: transparent;
+  }
+}
+
+.skill-modal-show {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  transform-origin: left;
+  p {
+    color: black;
+  }
+}
