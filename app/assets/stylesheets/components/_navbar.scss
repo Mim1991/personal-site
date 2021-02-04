@@ -182,7 +182,7 @@
       animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
     }
 
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       li:nth-child(#{$i}) {
         &:after,
         a {
