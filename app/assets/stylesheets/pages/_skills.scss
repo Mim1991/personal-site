@@ -69,7 +69,7 @@
     margin-top: -1.7rem;
   }
   .section-four svg {
-    margin-bottom: 1.5rem;
+    // margin-bottom: 1.5rem;
   }
 }
 
@@ -77,8 +77,24 @@
   .skills-content h3 {
     font-size: 55px;
   }
+  #skills-one {
+    margin-top: 0;
+  }
   .skill {
     margin-top: -2.5rem;
+  }
+
+  .skill-modal {
+    h4 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .skill-layout {
+    padding: 50px 39px;
   }
 }
 
@@ -92,8 +108,16 @@
   .section-four {
     margin-bottom: 10vh;
   }
-  .section-four svg {
+  .skills-header svg {
     width: 736px;
+  }
+  .skill-modal {
+    h4 {
+      font-size: 5rem;
+    }
+    svg {
+      margin-right: 25px;
+    }
   }
 }
 
@@ -104,7 +128,7 @@
   .skill {
     margin-top: -4rem;
   }
-  .section-four svg {
+  .skills-header svg {
     width: 600px;
   }
   .section-four {
@@ -123,11 +147,21 @@
     margin-bottom: 0;
     margin-top: 8vh;
   }
-  .section-four svg {
+  .skills-header svg {
     width: 600px;
   }
   .section-four {
     margin-bottom: 5vh;
+  }
+
+  .skill-modal h4 {
+    font-size: 3.3rem;
+  }
+  .skill-modal p {
+    font-size: 1.2rem;
+  }
+  .exit svg {
+    width: 43px;
   }
 }
 
@@ -141,9 +175,13 @@
   .section-four {
     margin-bottom: 0;
   }
-  .section-four svg {
+  .skills-header svg {
     width: 350px;
     margin-bottom: 0;
+  }
+
+  .skill-modal p {
+    font-size: 1rem;
   }
 }
 
@@ -159,8 +197,16 @@
     margin-bottom: 0;
   }
 
-  .section-four svg {
+  .skills-header svg {
     width: 350px;
+  }
+
+  .skill-modal h4 {
+    font-size: 2.5rem;
+  }
+  .exit svg {
+    width: 32px;
+    margin-bottom: 0;
   }
 }
 
@@ -181,5 +227,11 @@
 
   .skills-header {
     margin-right: 121px;
+  }
+  .skill-layout {
+    justify-content: flex-start;
+  }
+  .skill-modal h4 {
+    font-size: 2rem;
   }
 }
