@@ -86,20 +86,26 @@
   .profile-photo {
     width: 89%;
   }
+  .section-six p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 958px) {
   .biography p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .about-content {
     width: 90%;
+  }
+  .about-desc {
+    width: 75%;
   }
 }
 
 @media (max-width: 864px) {
   .about-desc {
-    width: 55%;
+    width: 80%;
   }
 }
 
@@ -111,11 +117,14 @@
     width: 95%;
   }
   .about-desc {
-    width: 56%;
+    width: 70%;
   }
   .profile-photo {
     height: 50vh;
     margin-top: -36px;
+  }
+  .biography p {
+    font-size: 13px;
   }
 }
 
@@ -139,6 +148,15 @@
   .about-desc {
     width: 95%;
     justify-content: flex-start;
+    margin-top: 36px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .biography p {
+    font-size: 16px;
   }
 
   .about-img {
@@ -147,13 +165,20 @@
   }
 
   .profile-photo {
-    width: 80%;
+    width: 71%;
   }
   .button-cv {
     margin-top: 30px;
   }
   .button-cv a {
     font-size: 1.2rem;
+  }
+  .image-wrapper {
+    margin-left: 0%;
+  }
+
+  .hidden {
+    left: auto;
   }
 }
 @media (max-width: 570px) {
@@ -166,9 +191,7 @@
   // .profile-photo {
   //   height: 43vh;
   // }
-  .image-wrapper {
-    margin-left: 18%;
-  }
+
   .about-content {
     margin-top: 3vh;
   }
@@ -179,6 +202,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+
+  .image-wrapper {
+    margin-left: 0;
+  }
+
+  .biography p {
+    font-size: 14px;
   }
 
   .profile-photo {
