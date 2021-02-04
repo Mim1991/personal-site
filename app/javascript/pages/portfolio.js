@@ -18,6 +18,11 @@ const initPortfolio = () => {
       border.classList.add("border-full");
     }
 
+    function addHeaderBorder(item, border) {
+      item.classList.add("appear-portfolio");
+      border.classList.add("border-full-header");
+    }
+
     function removeClass(item, border) {
       item.classList.remove("appear-portfolio");
       border.classList.remove("border-full");
@@ -25,7 +30,7 @@ const initPortfolio = () => {
 
     if (portfolioPosition < screenPosition) {
       setTimeout(function () {
-        addClass(portfolioHeader, borderHeader);
+        addHeaderBorder(portfolioHeader, borderHeader);
       }, 400);
       setTimeout(function () {
         addClass(projectOne, bordersOne);
@@ -48,27 +53,26 @@ const initPortfolio = () => {
 
 const initProjectHover = () => {
   const projectOne = document.querySelector(".project-one");
+  const stackOne = document.querySelector(".project-one .stackuse");
   const projectTwo = document.querySelector(".project-two");
+  const stackTwo = document.querySelector(".project-two .stackuse");
   const projectThree = document.querySelector(".project-three");
+  const stackThree = document.querySelector(".project-three .stackuse");
 
-  projectOne.addEventListener("mouseenter", () => {
-    projectOne.classList.add("project-one-hover");
-  });
-  projectOne.addEventListener("mouseleave", () => {
-    projectOne.classList.remove("project-one-hover");
-  });
-  projectTwo.addEventListener("mouseenter", () => {
-    projectTwo.classList.add("project-two-hover");
-  });
-  projectTwo.addEventListener("mouseleave", () => {
-    projectTwo.classList.remove("project-two-hover");
-  });
-  projectThree.addEventListener("mouseenter", () => {
-    projectThree.classList.add("project-three-hover");
-  });
-  projectThree.addEventListener("mouseleave", () => {
-    projectThree.classList.remove("project-three-hover");
-  });
+  const projectHover = (project, stack, color) => {
+    project.addEventListener("mouseenter", () => {
+      stack.style.visibility = "visible";
+      project.style.backgroundColor = color;
+    });
+    project.addEventListener("mouseleave", () => {
+      stack.style.visibility = "hidden";
+      project.style.backgroundColor = "#1b1b1b";
+    });
+  };
+
+  projectHover(projectOne, stackOne, "#28013A");
+  projectHover(projectTwo, stackTwo, "#00333A");
+  projectHover(projectThree, stackThree, "#0F002E");
 };
 
 export { initPortfolio, initProjectHover };

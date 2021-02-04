@@ -60,8 +60,15 @@
       <div class="portfolio-overview">
         <%= link_to "https://youtu.be/lmQx0AHFbuA?t=1995", target: :_blank do  %>
           <div class="project project-one">
-            
-            <h3>PROJECT #1</h3>
+            <div class="project-header">
+              <h3>PROJECT #1</h3>
+              <div class="stackuse">
+                <%= cl_image_tag("ruby_icon.png", class:"stack-icon") %>
+                <%= cl_image_tag("javascript_icon.png", class:"stack-icon") %>
+                <%= cl_image_tag("javascript_icon.png", class:"stack-icon") %>
+                <%= cl_image_tag("javascript_icon.png", class:"stack-icon") %>
+              </div>
+            </div>
             <div class="project-info">
               <div class="project-arrow">
                 <h2 id="dish-advisor">DISH ADVISOR</h2>
@@ -76,7 +83,15 @@
         
         <%= link_to "http://tropic-like-its-hot.herokuapp.com/", target: :_blank do %>
           <div class="project project-two">
-            <h3>PROJECT #2</h3>
+            <div class="project-header">
+              <h3>PROJECT #1</h3>
+              <div class="stackuse">
+                <h3>A</h3>
+                <h3>B</h3>
+                <h3>C</h3>
+                <h3>D</h3>
+              </div>
+            </div>
             <div class="project-info">
               <div class="project-arrow">
                 <h2 id="tropic-hot">TROPIC LIKE IT'S HOT</h2>
@@ -91,7 +106,15 @@
         
         <%= link_to "#" do  %>
           <div class="project project-three">
-            <h3>PROJECT #3</h3>
+            <div class="project-header">
+              <h3>PROJECT #3</h3>
+              <div class="stackuse">
+                <h3>A</h3>
+                <h3>B</h3>
+                <h3>C</h3>
+                <h3>D</h3>
+              </div>
+            </div>
             <div class="project-info">
               <div class="project-arrow">
                 <h2 id="this-site">THIS WEBSITE</h2>
