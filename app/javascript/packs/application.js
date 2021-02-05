@@ -42,7 +42,7 @@ document.addEventListener("turbolinks:load", () => {
   initScroll();
   initSkills();
   initAbout();
-  // initPreloader();
+  initPreloader();
   initNavbar();
   initCursor();
   initProjectHover();
