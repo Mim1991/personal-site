@@ -36,13 +36,15 @@ import { initModal } from "../components/modal.js";
 document.addEventListener("turbolinks:load", () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initPreloader();
   initLanding();
   initBannerSlide();
+
   initPortfolio();
   initScroll();
   initSkills();
   initAbout();
-  initPreloader();
+
   initNavbar();
   initCursor();
   initProjectHover();

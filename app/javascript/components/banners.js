@@ -1,7 +1,7 @@
 const initBannerSlide = () => {
-  window.onload = () => {
+  setTimeout(function () {
     const bannerOne = document.querySelector(".slide-in");
-    console.dir(bannerOne.offsetWidth);
+    console.log("hello");
     const bannerTwo = document.querySelector(".second-stack");
     const bannerThree = document.querySelector(".third-stack");
     const bannerFour = document.querySelector(".fourth-stack");
@@ -67,7 +67,7 @@ const initBannerSlide = () => {
         bannerFour.style.opacity = slideFourMoment;
       }
     });
-  };
+  }, 3000);
 };
 
 export { initBannerSlide };
