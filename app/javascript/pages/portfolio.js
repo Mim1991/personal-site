@@ -31,16 +31,16 @@ const initPortfolio = () => {
     if (portfolioPosition < screenPosition) {
       setTimeout(function () {
         addHeaderBorder(portfolioHeader, borderHeader);
-      }, 400);
+      }, 100);
       setTimeout(function () {
         addClass(projectOne, bordersOne);
-      }, 800);
+      }, 500);
       setTimeout(function () {
         addClass(projectTwo, bordersTwo);
-      }, 1200);
+      }, 800);
       setTimeout(function () {
         addClass(projectThree, bordersThree);
-      }, 1400);
+      }, 1100);
     } else {
       removeClass(portfolioHeader, borderheader);
       removeClass(projectOne, bordersOne);

@@ -240,4 +240,17 @@ label {
   .footer-contact {
     padding-top: 168px;
   }
+
+  .fab {
+    font-size: 1.5rem;
+  }
+  .social-icons {
+    width: 35%;
+  }
+}
+
+@media (max-width: 800px) and (min-height: 800px) {
+  .footer-contact {
+    padding-top: 250px;
+  }
 }
