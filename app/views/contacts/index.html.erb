@@ -1,0 +1,10 @@
+<% @messages.reverse.each do |message| %>
+  <div class="container white-text">
+    <h3>First Name: <%= message.first_name %></h3>
+    <h3>Last Name: <%= message.last_name %></h3>
+    <p>Email: <%= message.email %></p>
+    <p>Phone: <%= message.phone %></p>
+    <p>Message: <%= message.message %></p>
+    <p>Date: <%= message.created_at %> </p>
+  </div>
+<% end %>
