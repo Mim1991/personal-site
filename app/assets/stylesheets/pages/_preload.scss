@@ -15,7 +15,7 @@
 }
 .box {
   width: 100vw;
-  height: 65vh;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,6 +41,16 @@
   letter-spacing: 3px;
   font-weight: 800;
   // margin-bottom: 11vh;
+}
+
+#loading {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: $body-alt;
+  text-align: left;
+  width: 98%;
+  font-size: 1rem;
 }
 
 .box .b {
