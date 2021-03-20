@@ -1,5 +1,5 @@
 const initModal = () => {
-  // h3 selector on home page
+  // H3 selector on home page for titles
   const ruby = document.querySelector("#ruby");
   const rubyrails = document.querySelector("#rubyrails");
   const react = document.querySelector("#react");
@@ -16,7 +16,7 @@ const initModal = () => {
   const uiux = document.querySelector("#uiux");
   const postgresql = document.querySelector("#postgresql");
 
-  // modal selectors in modal
+  // Modal selectors
   const rubyModal = document.querySelector("#ruby-skill");
   const rubyrailsModal = document.querySelector("#rubyrails-skill");
   const reactModal = document.querySelector("#react-skill");
@@ -33,9 +33,11 @@ const initModal = () => {
   const uiuxModal = document.querySelector("#uiux-skill");
   const postgresqlModal = document.querySelector("#postgresql-skill");
 
+  // Exit button for modals
   const exit = document.querySelectorAll(".exit");
 
-  function showModal(skill, modal) {
+  // Apply class which has transition slide to it
+  const showModal = (skill, modal) => {
     skill.addEventListener("click", () => {
       modal.classList.add("skill-modal-show");
     });
@@ -45,7 +47,7 @@ const initModal = () => {
         modal.classList.remove("skill-modal-show");
       });
     });
-  }
+  };
 
   showModal(ruby, rubyModal);
   showModal(rubyrails, rubyrailsModal);
