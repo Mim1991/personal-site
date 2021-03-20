@@ -1,0 +1,37 @@
+<div class="footer-holder"id="revealed-section-placeholder"></div>
+<div class="footer" id="revealed-section">
+  <div class="footer-contact">
+    <div class="start-project">
+      <h2 id="header-footer" class="mb-3">Want to have a chat?</h2>
+      <div class="subhead-box">
+        <h2 id="subhead-footer">Get in touch</h2>
+        <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2269 0.368774H1.62486C0.337864 0.368774 -0.429136 1.80277 0.284864 2.87277L12.4939 21.1858C12.8539 21.7268 12.8539 22.4318 12.4939 22.9728L0.284864 41.2868C-0.429136 42.3568 0.337864 43.7908 1.62486 43.7908H12.2269C12.7659 43.7908 13.2689 43.5218 13.5669 43.0738L26.9679 22.9728C27.3279 22.4318 27.3279 21.7268 26.9679 21.1858L13.5669 1.08677C13.2689 0.638774 12.7659 0.368774 12.2269 0.368774ZM33.9389 0.368774H23.3359C22.0489 0.368774 21.2819 1.80277 21.9959 2.87277L34.2049 21.1858C34.5649 21.7268 34.5649 22.4318 34.2049 22.9728L21.9959 41.2868C21.2819 42.3568 22.0489 43.7908 23.3359 43.7908H33.9389C34.4769 43.7908 34.9799 43.5218 35.2779 43.0738L48.6789 22.9728C49.0389 22.4318 49.0389 21.7268 48.6789 21.1858L35.2779 1.08677C34.9799 0.638774 34.4769 0.368774 33.9389 0.368774Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <div class="contact-form">
+      <%= render "shared/contact_form", message: @message %>
+    </div>
+  </div>
+  
+  <div class="quick-contact" id="quick-contact">
+    <div class="quick-details">
+      <%= mail_to "meehir.patel12@gmail.com" do  %>
+        <p><span style="font-weight: 700; font-size: 14px">E:</span><span style="color:#ffe5e300; letter-spacing: 2px">...</span>meehir.patel12@gmail.com</p>
+      <% end %>
+      <p><span style="font-weight: 700; font-size: 14px">T:</span><span style="color:#ffe5e300; letter-spacing: 2px"">...</span>+44 7450 568232</p>
+    </div>
+    <div class="social-icons">
+      <%= link_to "https://www.instagram.com/mimstagramme/", target: :_blank do  %>
+        <p><i class="fab fa-instagram"></i></p>
+      <% end %>
+      <%= link_to "https://www.github.com/Mim1991/", target: :_blank do  %>
+        <p><i class="fab fa-github"></i></p>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/mims-patel/", target: :_blank do  %>
+        <p ><i class="fab fa-linkedin"></i></p>
+      <% end %>
+    </div>
+  </div>
+</div>

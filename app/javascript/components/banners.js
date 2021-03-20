@@ -1,14 +1,16 @@
 const initBannerSlide = () => {
   setTimeout(function () {
     const bannerOne = document.querySelector(".slide-in");
-    console.log("hello");
     const bannerTwo = document.querySelector(".second-stack");
     const bannerThree = document.querySelector(".third-stack");
     const bannerFour = document.querySelector(".fourth-stack");
 
+    function bannerDistance(banner) {
+      return banner.getBoundingClientRect().left;
+    }
+
     const bannerOneOffset =
       bannerOne.getBoundingClientRect().left + bannerOne.offsetWidth;
-
     const bannerTwoOffset =
       bannerTwo.getBoundingClientRect().left + bannerTwo.offsetWidth;
     const bannerThreeOffset =
@@ -21,10 +23,6 @@ const initBannerSlide = () => {
       if (bannerOne.getBoundingClientRect().bottom > 0) {
         scroll = window.pageYOffset;
       }
-      // console.log(scroll);
-
-      // console.log(scroll, bannerOne.getBoundingClientRect().top);
-
       const slideOneMoment =
         scroll /
         (bannerOne.getBoundingClientRect().top + bannerOne.offsetHeight);
