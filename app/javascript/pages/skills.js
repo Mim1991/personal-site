@@ -5,6 +5,7 @@ const initSkills = () => {
     const servicesText = document.querySelector(".header-invis");
     const servicesTextPosition = servicesText.getBoundingClientRect().top;
     const screenPosition = window.innerHeight / 1.5;
+
     const headerAppear = (textPosition, text) => {
       if (textPosition < screenPosition) {
         text.classList.add("appear-header");
