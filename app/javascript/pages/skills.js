@@ -1,11 +1,10 @@
 const initSkills = () => {
-  const skillsText = document.querySelector(".skills-header");
-  const skillsTextPosition = skillsText.getBoundingClientRect().top;
-  const servicesText = document.querySelector(".header-invis");
-  const servicesTextPosition = servicesText.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 1.5;
-
   const skillsAnimate = () => {
+    const skillsText = document.querySelector(".skills-header");
+    const skillsTextPosition = skillsText.getBoundingClientRect().top;
+    const servicesText = document.querySelector(".header-invis");
+    const servicesTextPosition = servicesText.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
     const headerAppear = (textPosition, text) => {
       if (textPosition < screenPosition) {
         text.classList.add("appear-header");
